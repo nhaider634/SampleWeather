@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/n"
+    tools:context="com.example.nasim.sampleweather.Daily">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout2"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:background="#bb172c41"
+        android:paddingBottom="5dp"
+        >
+
+        <TextView
+            android:id="@+id/CityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#e3edef"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Dhaka, Bd"
+            android:layout_marginBottom="3dp"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textColor="#e3edef"
+            android:textSize="14sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Daily Forecast"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/detailRecyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
